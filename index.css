@@ -36,8 +36,8 @@
     display: flex;
   }
   header .head .links ul li {
-    padding: 25px 10px;
-    font-size: 12px;
+     padding: 25px 7px;
+     font-size: 10px;
   }
   header .head .links ul li a {
     text-decoration: none;
