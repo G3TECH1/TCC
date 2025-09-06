@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC : Register-Page</title>
+    <link rel="shortcut icon" href="image/tcc-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        @media (min-width:300px) and (max-width:1000px){
+            main .title h1{
+                    /* border: 1px solid red; */
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 4%;
+                    letter-spacing: 2px;
+                    font-weight: 900;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #611c5e;
+            }
+
+            .form-field{
+                /* border: 1px solid red; */
+                height: 68rem;
+            }
+
+            .form-field form{
+                /* border: 1px solid red; */
+                width: 70%;
+                height: 64rem;
+                position: absolute;
+                right: 17%;
+                top: 250px;
+                text-align: center;
+                padding: 5%;
+            }
+            .form-field form input{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin: auto;
+                margin-bottom: 13%;
+                width: 120%;
+                height: 5%;
+                border: 1px solid purple;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            .form-field form .submit{
+                border: 1px solid gray;
+                width: 30%;
+                margin: auto;
+                margin-bottom: 7%;
+                margin-top: 5%;
+                font-size: 30px;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+                border: 1px solid purple;
+                padding: 10px;
+            }
+
+            .form-field form .browse{
+                background-color: whitesmoke;
+            }
+
+            .form-field form span{
+                display: flex;
+                width: 50%;
+                margin: auto;
+                margin-top: 2%;
+                justify-content: space-between;
+            }
+            .form-field form .checkbox{
+                height: auto;
+                width: 20px;
+                margin-right: 20px;
+            }
+            span .check{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            footer {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                position: relative;
+                top: -2em;
+                grid-gap: 6px;
+                height: 200px;
+                padding: 4px;
+                background-color: #824780;
+                color: #fff;
+                font-size: 10px;
+            }
+            footer .address {
+                padding: 20px;
+            }
+            footer .contacts {
+                padding: 20px;
+            }
+            footer .contacts h5 {
+                margin-bottom: 3%;
+            }
+            footer .follow {
+                padding: 20px;
+            }
+            footer .follow h5 {
+                margin-bottom: 3%;
+            }
+            footer .footer-links {
+                padding: 20px;
+            }
+            footer .footer-links h5 {
+                margin-bottom: 3%;
+            }
+            footer .footer-links ul {
+                list-style: none;
+            }
+            footer .footer-links ul a {
+                text-decoration: none;
+                color: #fff;
+            }
+            footer .footer-links ul a:hover {
+                text-decoration: underline;
+            }
+        }
+        @media (min-width:1000px){
+            main .title h1{
+                    /* border: 1px solid red; */
+                    font-size: 40px;
+                    text-align: center;
+                    margin-top: 4%;
+                    letter-spacing: 2px;
+                    font-weight: 900;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #611c5e;
+            }
+
+            .form-field{
+                /* border: 1px solid red; */
+                height: 68rem;
+            }
+
+            .form-field form{
+                /* border: 1px solid red; */
+                width: 70%;
+                height: 64rem;
+                position: absolute;
+                right: 17%;
+                top: 250px;
+                text-align: center;
+                padding: 5%;
+            }
+            .form-field form input{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin: auto;
+                margin-bottom: 2%;
+                width: 80%;
+                height: 5%;
+                border: 1px solid purple;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            .form-field form .submit{
+                border: 1px solid gray;
+                width: 30%;
+                margin: auto;
+                margin-bottom: 7%;
+                margin-top: 5%;
+                font-size: 30px;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+                border: 1px solid purple;
+                padding: 10px;
+            }
+
+            .form-field form .browse{
+                background-color: whitesmoke;
+            }
+
+            .form-field form span{
+                display: flex;
+                width: 50%;
+                margin: auto;
+                margin-top: 2%;
+                justify-content: space-between;
+            }
+            .form-field form .checkbox{
+                height: auto;
+            }
+            span .check{
+                margin-left: 20px;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo"><img src="image/tcc-logo.png" alt="logo" width="60"></div>
+            <div class="No">09162267136</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>
+                STUDENT APPLICATION FORM
+            </h1>
+        </div>
+
+        <div class="form-field">
+            <form>
+                <input type="text" placeholder="Firstname">
+                <input type="text" placeholder="Lastname">
+                <span class="gender">
+                    <p>Gender</p> 
+                    <p class="check">Male</p><input type="checkbox" class="checkbox"> 
+                    <p class="check">Female</p><input type="checkbox" class="checkbox">
+                </span>
+                <p>Date Of Birth</p> <input type="date">
+                <input type="text" placeholder="Phone Number">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Address">
+                <input type="text" placeholder="Academic Status">
+                <input type="text" placeholder="What are your expectations from this program?" class="text-box">
+                <p>Upload your photo</p><input type="file" class="browse">
+                <div class="submit">Submit</div>
+            </form>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="address">
+            <h5>ADDRESS</h5>
+
+            <p>35, Olowu Street,Ikeja, Lagos. Nigeria</p>
+        </div>
+
+        <div class="contacts">
+            <h5>CONTACTS</h5>
+               
+            <p>
+                +234(0) 916 226 7136 <br>
+                +234(0) 901 609 0785 <br>
+                info@thecodecenter.org
+            </p>
+        </div>
+
+        <div class="follow">
+            <h5>FOLLOW US</h5>
+
+            <P>
+                Facebook <br>
+                Twitter <br>
+                Instagram
+            </P>
+        </div>
+
+        <div class="footer-links">
+            <h5>LINKS</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+    </footer>
+</body>
+</html>

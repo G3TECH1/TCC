@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC : Catalogue-Page</title>
+    <link rel="shortcut icon" href="image/tcc-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+        /* mobile desktop */
+
+        
+        @media (min-width:300px) and (max-width:1000px){
+            main .head-container {
+                height: 100rem;
+            }
+            main .head-container {
+                display: flex;
+                justify-content: space-between;
+                height: 100px;
+            }
+            main .head-container .line{
+                width: 400px;
+                position: relative;
+                top: 50%;
+                height: 5px;
+                background-color: #29132c;
+            }
+            main .head-container .line2 {
+                width: 400px;
+                height: 5px;
+                position: relative;
+                top: 50%;
+                background-color: #29132c;
+            }
+            main .head-container h1 {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin: auto;
+                font-size: 22px;
+                color: #3f1d45;
+            }
+            .content{
+                /* border: 1px solid red; */
+                /* width: rem; */
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                padding: 17px;
+                grid-gap: 3px;
+                height: 70em;
+            }
+            .apply{
+                border: 1px solid purple;
+                width: 90px;
+                border-radius: 30px;
+                padding: 16px;
+                background-color: #3f1d45;
+                color: #fff;
+            }
+
+            .content .software{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .software h1{
+                font-size: 20px;
+            }
+            .content .software .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .software ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .software ul li{
+                padding: 5px;
+            }
+            .content .software .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .software .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .software .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .ui-ux{
+                border: 2px solid #824780;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .ui-ux h1{
+                font-size: 20px;
+            }
+            .content .ui-ux .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .ui-ux ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .ui-ux ul li{
+                padding: 5px;
+            }
+            .content .ui-ux .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .ui-ux .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .ui-ux .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .frontend{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .frontend h1{
+                font-size: 20px;
+            }
+            .content .frontend .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .frontend ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .frontend ul li{
+                padding: 5px;
+            }
+            .content .frontend .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .frontend .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .frontend .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .fullstack{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .fullstack h1{
+                font-size: 20px;
+            }
+            .content .fullstack .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .fullstack ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .fullstack ul li{
+                padding: 5px;
+            }
+            .content .fullstack .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 20%;
+            }
+            .content .fullstack .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .fullstack .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .web-design{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 20rem;
+            }
+            .content .web-design h1{
+                font-size: 20px;
+            }
+            .content .web-design .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .web-design ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .web-design ul li{
+                padding: 5px;
+            }
+            .content .web-design .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .web-design .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .web-design .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .python{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .python h1{
+                font-size: 20px;
+            }
+            .content .python .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .python ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .python ul li{
+                padding: 5px;
+            }
+            .content .python .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .python .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .python .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .web-dev{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 24rem;
+            }
+            .content .web-dev h1{
+                font-size: 20px;
+            }
+            .content .web-dev .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .web-dev ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .web-dev ul li{
+                padding: 15px;
+            }
+            .content .web-dev .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .web-dev .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .web-dev .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .java{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 27rem;
+            }
+            .content .java h1{
+                font-size: 20px;
+            }
+            .content .java .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 64%;
+                margin-top: 3%;
+            }
+            .content .java ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .java ul li{
+                padding: 15px;
+            }
+            .content .java .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 30%;
+            }
+            .content .java .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .java .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .mobile{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .mobile h1{
+                font-size: 20px;
+            }
+            .content .mobile .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .mobile ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .mobile ul li{
+                padding: 5px;
+            }
+            .content .mobile .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .mobile .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .mobile .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+        }
+
+
+
+
+        /* Desktop styling */
+        @media (min-width: 1000px) {
+            main .head-container {
+                height: 100rem;
+            }
+            main .head-container {
+                display: flex;
+                justify-content: space-between;
+                height: 100px;
+            }
+            main .head-container .line{
+                width: 400px;
+                position: relative;
+                top: 50%;
+                height: 5px;
+                background-color: #29132c;
+            }
+            main .head-container .line2 {
+                width: 400px;
+                height: 5px;
+                position: relative;
+                top: 50%;
+                background-color: #29132c;
+            }
+            main .head-container h1 {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin: auto;
+                font-size: 29px;
+                color: #3f1d45;
+            }
+            .content{
+                /* border: 1px solid red; */
+                /* width: rem; */
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 17px;
+                grid-gap: 3px;
+            }
+            .apply{
+                border: 1px solid purple;
+                width: 90px;
+                border-radius: 30px;
+                padding: 16px;
+                background-color: #3f1d45;
+                color: #fff;
+            }
+
+            .content .software{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .software h1{
+                font-size: 20px;
+            }
+            .content .software .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .software ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .software ul li{
+                padding: 5px;
+            }
+            .content .software .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .software .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .software .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .ui-ux{
+                border: 2px solid #824780;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .ui-ux h1{
+                font-size: 20px;
+            }
+            .content .ui-ux .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .ui-ux ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .ui-ux ul li{
+                padding: 5px;
+            }
+            .content .ui-ux .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .ui-ux .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .ui-ux .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .frontend{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .frontend h1{
+                font-size: 20px;
+            }
+            .content .frontend .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .frontend ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .frontend ul li{
+                padding: 5px;
+            }
+            .content .frontend .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .frontend .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .frontend .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .fullstack{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .fullstack h1{
+                font-size: 20px;
+            }
+            .content .fullstack .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .fullstack ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .fullstack ul li{
+                padding: 5px;
+            }
+            .content .fullstack .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 20%;
+            }
+            .content .fullstack .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .fullstack .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .web-design{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 20rem;
+            }
+            .content .web-design h1{
+                font-size: 20px;
+            }
+            .content .web-design .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .web-design ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .web-design ul li{
+                padding: 5px;
+            }
+            .content .web-design .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .web-design .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .web-design .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .python{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .python h1{
+                font-size: 20px;
+            }
+            .content .python .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .python ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .python ul li{
+                padding: 5px;
+            }
+            .content .python .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .python .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .python .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .web-dev{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 24rem;
+            }
+            .content .web-dev h1{
+                font-size: 20px;
+            }
+            .content .web-dev .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .web-dev ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .web-dev ul li{
+                padding: 15px;
+            }
+            .content .web-dev .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .web-dev .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .web-dev .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .java{
+                border: 2px solid #824780 ;
+                width: 29rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+                height: 27rem;
+            }
+            .content .java h1{
+                font-size: 20px;
+            }
+            .content .java .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 64%;
+                margin-top: 3%;
+            }
+            .content .java ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .java ul li{
+                padding: 15px;
+            }
+            .content .java .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 30%;
+            }
+            .content .java .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .java .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+            .content .mobile{
+                border: 2px solid #824780 ;
+                width: 25rem;
+                padding: 3%;
+                border-radius: 20px;
+                position: relative;
+                margin-left: 12px;
+            }
+            .content .mobile h1{
+                font-size: 20px;
+            }
+            .content .mobile .Duration{
+                position: absolute;
+                right: 10%;
+                bottom: 69%;
+                margin-top: 3%;
+            }
+            .content .mobile ul{
+                list-style: none;
+                margin-top: 5%;
+            }
+            .content .mobile ul li{
+                padding: 5px;
+            }
+            .content .mobile .circle{
+                /* border: 1px solid red; */
+                width: 140px;
+                height: 140px;
+                padding: 14px;
+                border-radius: 100px;
+                background-color: #824780 ;
+                color: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+            }
+            .content .mobile .circle .regsitration-fee{
+                position: relative;
+                left: 5px;
+                bottom: -10px;
+            }
+            .content .mobile .circle .Training-fee{
+                position: relative;
+                left: 20px;
+                bottom: -30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="head">
+            <div class="logo"><img src="image/tcc-logo.png" alt="logo" width="60"></div>
+            <div class="No">09162267136</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div class="head-container">
+            <div class="line"></div><h1>CATALOGUE</h1><div class="line2"></div>
+        </div>
+
+        <div class="content">
+            <div class="software">
+                <h1>SOFTWARE DEVELOPMENT</h1><div class="sl"></div>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                    <li>JAVASCRIPT</li>
+                    <li>NODE JS</li>
+                    <li>EXPRESS JS</li>
+                    <li>MONGO DB</li>
+                    <li>API DEVELOPMENT</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>6 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N300,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+            <div class="ui-ux">
+                <h1>UI/UX DESIGN</h1>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>WIREFRAMING</li>
+                    <li>MOCKUPS</li>
+                    <li>PROTOTYPING</li>
+                    <li>USER RESEARCH</li>
+                    <li>DESIGN PRINCIPLES</li>
+                    <li>COLOR THEORY</li>
+                    <li>TYPOGRAPHY</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>4 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N200,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+            <div class="frontend">
+                <h1>FRONTEND DEVELOPMENT</h1>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>RWD</li>
+                    <li>JAVASCRIPT</li>
+                    <li>REACT JS</li>
+                    <li>DESIGN PRINCIPLES</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>4 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N200,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+            <div class="fullstack">
+                <h1>FULLSTACK DEVELOPMENT</h1>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                    <li>JAVASCRIPT</li>
+                    <li>NODE JS</li>
+                    <li>EXPRESS JS</li>
+                    <li>MONGO DB</li>
+                    <li>API DEVELOPMENT</li>
+                    <li>REACT JS</li>
+                    <li>UI DESIGN FUNDAMENTALS</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>8 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N500,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+
+            <div class="web-design">
+                <h1>WEB DESIGN</h1>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>RWD</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>10 Weeks</strong></P>
+
+                <div class="circle">
+                    
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N150,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+            <div class="python">
+                <h1>PYTHON PROGRAMMING</h1><p><i>(Web dev & Scraping)</i></p>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PYTHON</li>
+                    <li>BEAUTIFUL SOUP</li>
+                    <li>DJANGO</li>
+                    <li>MYSQL</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>4 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N200,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+
+            <div class="web-dev">
+                <h1>WEB DEVELOPMENT</h1><p><i>PHP TRACK</i></p>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>4 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N200,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+
+            <div class="java">
+                <h1>JAVA PROGRAMMING</h1>
+                <hr>
+                <ul>
+                    <li>JAVA PROGRAMMING FUNDAMENTALS</li>
+                    <li>J2SEE FUNDAMENTALS</li>
+                    <li>GUI PROGRAMMING</li>
+                    <li>MYSQL</li>
+                    <li>XML PROGRAMMING</li>
+                    <li>DEVELOPMENT ENTERPRISE APPLICATION</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>6 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N250,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+
+            <div class="mobile">
+                <h1>MOBILE APP DEVELOPMENT</h1>
+                <hr>
+                <ul>
+                    <li>ANDROID STUDIO</li>
+                    <li>XML PROGRAMMING</li>
+                    <li>FLUTTER DEVELOPMENT</li>
+                    <li>DATA STORAGE</li>
+                    <li>NETWORK HANDLING</li>
+                    <li>SQLITE</li>
+                    <li>FIREBASE</li>
+                </ul>
+
+                <P class="Duration">Duration: <strong>4 Months</strong></P>
+
+                <div class="circle">
+                    <div class="regsitration-fee">
+                        <p>Registration Fee</p>
+                        <p>N20,000</p>
+                    </div>
+
+                    <div class="Training-fee">
+                        <p>Training Fee</p>
+                        <p>N200,000</p>
+                    </div>
+                </div>
+                <div class="apply">APPLY</div>
+            </div>
+            
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="address">
+            <h5>ADDRESS</h5>
+
+            <p>35, Olowu Street,Ikeja, Lagos. Nigeria</p>
+        </div>
+
+        <div class="contacts">
+            <h5>CONTACTS</h5>
+               
+            <p>
+                +234(0) 916 226 7136 <br>
+                +234(0) 901 609 0785 <br>
+                info@thecodecenter.org
+            </p>
+        </div>
+
+        <div class="follow">
+            <h5>FOLLOW US</h5>
+
+            <P>
+                Facebook <br>
+                Twitter <br>
+                Instagram
+            </P>
+        </div>
+
+        <div class="footer-links">
+            <h5>LINKS</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="careers.html">Career</a></li>
+                </ul>
+            </div>
+    </footer>
+</body>
+</html>
